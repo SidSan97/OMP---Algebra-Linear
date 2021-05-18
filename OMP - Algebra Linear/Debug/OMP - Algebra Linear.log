@@ -1,0 +1,11 @@
+﻿  main.cpp
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(15,23): warning C4101: 'tempo2': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(14,10): warning C4101: 'c1': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(15,8): warning C4101: 'tempo': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(14,18): warning C4101: 'c3': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(16,23): warning C4101: 'matriz_B': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(15,15): warning C4101: 'tempo1': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(14,14): warning C4101: 'c2': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(16,41): warning C4101: 'matriz_C': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(14,22): warning C4101: 'c4': variável local não referenciada
+  OMP - Algebra Linear.vcxproj -> C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\Debug\OMP - Algebra Linear.exe
