@@ -1,0 +1,18 @@
+﻿  main.cpp
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(112,13): warning C4244: '=': conversão de 'clock_t' para 'float', possível perda de dados
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(15,23): warning C4101: 'tempo2': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(14,18): warning C4101: 'c3': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(15,15): warning C4101: 'tempo1': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(14,22): warning C4101: 'c4': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(241,13): warning C4244: '=': conversão de 'clock_t' para 'float', possível perda de dados
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(125,23): warning C4101: 'tempo2': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(124,18): warning C4101: 'c3': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(125,15): warning C4101: 'tempo1': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(126,21): warning C4101: 'chunk': variável local não referenciada
+C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\OMP - Algebra Linear\main.cpp(124,22): warning C4101: 'c4': variável local não referenciada
+  Gerando código
+  1 of 20 functions ( 5.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finalizada a geração de código
+  OMP - Algebra Linear.vcxproj -> C:\Users\SIDNEI\Documents\Visual Studio 2019\OMP - Algebra Linear\Release\OMP - Algebra Linear.exe
