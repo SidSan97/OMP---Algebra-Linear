@@ -15,15 +15,15 @@ static void SERIAL()
 	float tempo, tempo1, tempo2;
 	int matrizA[10][10], matriz_B[10][10], matriz_C[10][10], nLido, auxi = 0;
 
-	FILE* matriz_A;  //DANDO NOME AO PONTEIRO QUE IR¡ LER O ARQUIVO COM A MATRIZ
+	FILE* matriz_A;  //DANDO NOME AO PONTEIRO QUE IR√Å LER O ARQUIVO COM A MATRIZ
 
-	cout << "Abaixo est· a matriz A lida de um arquivo de texto: " << endl<<endl;
+	cout << "Abaixo est√° a matriz A lida de um arquivo de texto: " << endl<<endl;
 
 	c1 = clock();
 	matriz_A = fopen("matriz_A.txt", "r"); //LENDO O ARQUIVO .TXT QUE CONTEM A MATRIZ
 	if (matriz_A == NULL)
 	{
-		cout << "N„o foi possÌvel abrir arquivo matriz_A.txt" << endl;
+		cout << "N√£o foi poss√≠vel abrir arquivo matriz_A.txt" << endl;
 		exit(1);
 	}
 
@@ -40,7 +40,7 @@ static void SERIAL()
 
 	cout << endl;
 
-	cout << "Abaixo temos a matriz B gerada de forma randÙmica: \n" << endl;
+	cout << "Abaixo temos a matriz B gerada de forma rand√¥mica: \n" << endl;
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -52,7 +52,7 @@ static void SERIAL()
 		cout << endl;
 	}
 
-	//PARTE DO C”DIGO QUE ESCREVE A MATRIZ B EM UM ARQUIVO DE TEXTO 'matriz_B.txt'
+	//PARTE DO C√ìDIGO QUE ESCREVE A MATRIZ B EM UM ARQUIVO DE TEXTO 'matriz_B.txt'
 
 	FILE* MatrizB;
 	MatrizB = fopen("Matriz_B.txt", "w");
@@ -66,7 +66,7 @@ static void SERIAL()
 		fprintf(MatrizB, "\n");
 	}
 
-	//PARTE QUE FAZ A MULTIPLICA«√O ENTRE AS MATRIZES A e B
+	//PARTE QUE FAZ A MULTIPLICA√á√ÉO ENTRE AS MATRIZES A e B
 	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 10; j++)
@@ -84,7 +84,7 @@ static void SERIAL()
 	cout << endl;
 
 	//IMPRIME O PRODUTO DA MATRIZ NA TELA
-	cout << "Produto das matrizes È: " << endl;
+	cout << "Produto das matrizes √©: " << endl;
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -112,7 +112,7 @@ static void SERIAL()
 	tempo = c2 - c1;
 
 	cout << endl;
-	cout << "Tempo de execuÁ„o foi de: " << 1000 * (double)tempo / (double)(CLOCKS_PER_SEC) <<" milisegundos."<< endl;
+	cout << "Tempo de execu√ß√£o foi de: " << 1000 * (double)tempo / (double)(CLOCKS_PER_SEC) <<" milisegundos."<< endl;
 	cout << endl;
 
 	system("pause");
@@ -126,9 +126,9 @@ static void OPENMP(void)
 	int tid, nthreads, chunk;
 	int matrizA[10][10], matriz_B[10][10], matriz_C[10][10], nLido, auxi = 0;
 
-	FILE* matriz_A;  //DANDO NOME AO PONTEIRO QUE IR¡ LER O ARQUIVO COM A MATRIZ
+	FILE* matriz_A;  //DANDO NOME AO PONTEIRO QUE IR√Å LER O ARQUIVO COM A MATRIZ
 
-	cout << "Abaixo est· a matriz A lida de um arquivo de texto: " << endl << endl;
+	cout << "Abaixo est√° a matriz A lida de um arquivo de texto: " << endl << endl;
 
 	c1 = clock();
 
@@ -144,7 +144,7 @@ static void OPENMP(void)
 		matriz_A = fopen("matriz_A.txt", "r"); //LENDO O ARQUIVO .TXT QUE CONTEM A MATRIZ
 		if (matriz_A == NULL)
 		{
-			cout << "N„o foi possÌvel abrir arquivo matriz_A.txt" << endl;
+			cout << "N√£o foi poss√≠vel abrir arquivo matriz_A.txt" << endl;
 			exit(1);
 		}
 
@@ -161,7 +161,7 @@ static void OPENMP(void)
 
 		cout << endl;
 
-		cout << "Abaixo temos a matriz B gerada de forma randÙmica: \n" << endl;
+		cout << "Abaixo temos a matriz B gerada de forma rand√¥mica: \n" << endl;
 
 		#pragma omp num_threads(4)
 		{
@@ -174,8 +174,9 @@ static void OPENMP(void)
 				}
 				cout << endl;
 			}
+			cout << endl;
 
-			//PARTE DO C”DIGO QUE ESCREVE A MATRIZ B EM UM ARQUIVO DE TEXTO 'Matriz_B PARALELO.txt'
+			//PARTE DO C√ìDIGO QUE ESCREVE A MATRIZ B EM UM ARQUIVO DE TEXTO 'Matriz_B PARALELO.txt'
 
 			FILE* MatrizB;
 			MatrizB = fopen("Matriz_B PARALELO.txt", "w");
@@ -190,7 +191,7 @@ static void OPENMP(void)
 			}
 		}
 
-		//PARTE QUE FAZ A MULTIPLICA«√O ENTRE AS MATRIZES A e B
+		//PARTE QUE FAZ A MULTIPLICA√á√ÉO ENTRE AS MATRIZES A e B
 
 		#pragma omp num_threads(4)
 		{
@@ -212,7 +213,7 @@ static void OPENMP(void)
 		cout << endl;
 
 		//IMPRIME O PRODUTO DA MATRIZ NA TELA
-		cout << "Produto das matrizes È: " << endl;
+		cout << "Produto das matrizes √©: " << endl;
 
 		for (int i = 0; i < 10; i++)
 		{
@@ -222,6 +223,8 @@ static void OPENMP(void)
 			}
 			cout << endl;
 		}
+
+		cout << endl;
 
 		//IMPRIME A MATRIZ C EM UM ARQUIVO DE TEXTO
 		FILE* MatrizC;
@@ -241,20 +244,20 @@ static void OPENMP(void)
 	tempo = c2 - c1;
 
 	cout << endl;
-	cout << "Tempo de execuÁ„o foi de: " << 1000 * (double)tempo / (double)(CLOCKS_PER_SEC) << " milisegundos." << endl;
+	cout << "Tempo de execu√ß√£o foi de: " << 1000 * (double)tempo / (double)(CLOCKS_PER_SEC) << " milisegundos." << endl;
 	cout << endl;
 
 	system("pause");
 }
 
-int main()
+void MENU(void)
 {
 	setlocale(LC_ALL, "Portuguese");
 
 	int op;
 
-	cout << "Qual opÁ„o vocÍ deseja executar? " << endl;
-	cout << "(1) SERIAL" << endl << "(2) PARALELO" << endl;
+	cout << "Qual op√ß√£o voc√™ deseja executar? " << endl;
+	cout << "(1) SERIAL" << endl << "(2) PARALELO" << endl << " Ou qualquer outra tecla para sair " << endl;
 
 	cin >> op;
 
@@ -262,4 +265,14 @@ int main()
 		SERIAL();
 	else if (op == 2)
 		OPENMP();
+	else
+		exit(0);
+
+	return;
+}
+
+int main()
+{
+	while (1)
+		MENU();
 }
